@@ -146,4 +146,7 @@ ul li a:hover {
 
 img {
     align-items: centre;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    margin-left: 20px;
 }
