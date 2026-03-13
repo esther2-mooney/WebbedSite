@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+          content="width=device-width,initial-scale=1">
+    <style>
+        #webkit {
+            /* WebKit */
+            -webkit-appearance: slider-vertical !important;
+            /* Mozilla */
+            -moz-appearance: slider-vertical;
+            /* Opera */
+            -o-appearance: slider-vertical;
+            /* Internet Explorer */
+            -ms-appearance: slider-vertical;
+            /* CSS3 */
+            appearance: slider-vertical;
+        }
+    </style>
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1 style="color:green; padding:13px;">
+            GeeksforGeeks
+        </h1>
+
+        <p>
+            Webkit-Appearance slider-vertical of HTML
+            input[type=range] tag
+        </p>
+
+        <br>
+        <br>
+        <input id="webkit" type="range" min="0" max="10" />
+        <br>
+        <br>
+
+        <p>Normal HTML input[type=range] tag</p>
+
+        <br>
+        <br>
+        <input type="range" id="brightness" min="0" max="100" />
+        <p id="brightness_text" class="confirm"> </p> <br>
+        <button class="brightnessbutton" onclick="brightness('brightness','brightness_text')">Submit</button>
+    </center>
+</body>
+
+</html>
