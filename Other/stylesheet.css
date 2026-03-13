@@ -95,6 +95,19 @@ progress::-moz-progress-bar {
 }
 
 
+#webkit {
+            /* WebKit */
+            -webkit-appearance: slider-vertical !important;
+            /* Mozilla */
+            -moz-appearance: slider-vertical;
+            /* Opera */
+            -o-appearance: slider-vertical;
+            /* Internet Explorer */
+            -ms-appearance: slider-vertical;
+            /* CSS3 */
+            appearance: slider-vertical;
+        }
+
 
 
 ul {
