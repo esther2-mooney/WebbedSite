@@ -17,8 +17,26 @@ function button2(PID, CID) {
   document.getElementById(CID).innerHTML = " ";
 }
 
-function brightness(PID, CID) 
-{ 
+function brightness(PID, CID) {
   document.getElementById(PID).value = 50
-  document.getElementById(CID).innerHTML = "BOOP"; 
+  document.getElementById(CID).innerHTML = "BOOP";
+}
+
+function doNavBar() {
+  fetch('/nav.html')
+    .then(response => {
+      // Check if the request was successful
+      if (!response.ok) {
+        throw new Error(`Failed to load nav: ${response.status}`);
+      }
+      return response.text(); // Convert response to text
+    })
+    .then(navHTML => {
+      // Insert the navigation HTML into the placeholder
+      document.getElementById('navbar-placeholder').innerHTML = navHTML;
+    })
+    .catch(error => {
+      // Log errors (e.g., if nav.html is missing)
+      console.error('Error loading navigation:', error);
+    });
 }

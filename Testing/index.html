@@ -15,15 +15,7 @@
 <body>
     <h1>Testing</h1>
 
-    <nav id="pageheader">
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/Traquet-Home/">Traquet</a></li>
-            <li><a href="/Learning/">Learning</a></li>
-            <li><a href="/Traquet-Habits/">Habits</a></li>
-            <li><a href="/Testing/">Testing</a></li>
-        </ul>
-    </nav>
+    <div id="navbar-placeholder"></div>
 
 
     <center>
@@ -50,6 +42,7 @@
         <p id="brightness_text" class="confirm"> </p> <br>
         <button class="brightnessbutton" onclick="brightness('brightness','brightness_text')">Submit</button>
     </center>
+    <script>window.onload = doNavBar()</script>
 </body>
 
 </html>
