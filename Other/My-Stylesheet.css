@@ -1,0 +1,70 @@
+@font-face {
+    font-display: swap;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../Fonts/jetbrains-mono-v23-latin-700.woff2') format('woff2');
+}
+
+body {
+    background-color:burlywood;
+    color: black;
+    font-family: 'JetBrains Mono';
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 300%;
+    float: none;
+}
+
+hr{height: 3px;
+background-color:saddlebrown;
+border: none;}
+
+#boxmodelA{
+    text-align: center;
+    width:200px;
+    border: 3px solid #758757;
+    padding: 10px;
+    margin: auto;
+    border-radius: 15px;
+    font-weight: 500;
+    float: right;
+    margin-right: 20px;
+}
+
+#TraquetButton {
+    align-items: center;
+    background-color: #00000000;
+    padding:5px;
+    margin:5px;
+    border-radius: 100%;
+    border: 5px;
+}
+
+#TraquetButton:hover {
+    background-color: black;
+}
+
+#TraquetButton:active {
+    background-color: #758757;
+}
+
+#boxmodelB{
+    text-align: center;
+    padding: 8px;
+    margin: auto;
+    font-weight: 500;
+    float: right;
+    margin-right: 20px;
+}
+
+#gif {
+    float:right;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}

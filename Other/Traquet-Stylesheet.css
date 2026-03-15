@@ -16,15 +16,14 @@ h1 {
     text-align: center;
     font-size: 300%;
     float: none;
-    margin: 10px;
 }
 
 h2 {
-    margin-left: 20px;
+    margin-left: 100px;
 }
 
 p {
-    margin-left: 20px;
+    margin-left: 100px;
 }
 
 #fonts {
@@ -36,8 +35,11 @@ p {
 }
 
 #navbar-placeholder {
+    margin: unset !important;
+    margin-left: 0px;
     position: sticky;
     top: 0;
+    left:0;
 }
 
 #boxmodel {
@@ -125,10 +127,12 @@ ul {
     width: 100%;
     overflow: hidden;
     background-color: #99A682;
+    height: 50px;
 }
 
 ul li {
     float: left;
+    margin-left: 10px;
 }
 
 ul li a {
@@ -144,9 +148,21 @@ ul li a:hover {
     border-radius: 5px;
 }
 
-img {
-    align-items: centre;
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    margin-left: 20px;
+
+.navbutton {
+    background-color: #99A682;
+    border-radius: 0px;
+    border: none;
+    float: left;
+    position: sticky;
+    align-content: center;
+    vertical-align: middle;
+    width: 75px;
+    height: 50px;
+    margin: 0;
+    top: 0;
+}
+
+.navbutton:hover {
+    background-color: #758757;
 }

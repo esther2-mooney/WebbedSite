@@ -1,8 +1,3 @@
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-
-
 function button1(PID, CID) {
   if (document.getElementById(PID).value < 100) {
     document.getElementById(PID).value = document.getElementById(PID).value + 10;
