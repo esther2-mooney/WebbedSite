@@ -11,34 +11,38 @@
 </head>
 
 <body>
-    <h1>Habits : Traquet</h1>
+    <button class="openbtn" onclick="openNav()"><img width="40px" src="/Images/boid-circle.png" alt="logo"></button>
 
-    <div id="navbar-placeholder"></div>
+    <div id="main">
+        <h1>Habits : Traquet</h1>
 
-
-
-
-    <br />
-    <progress id="progress1" max="100" value="0"></progress>
-    <p id="confirm1" class="confirm"> </p> <br>
-    <button class="button1" onclick="button1('progress1','confirm1')">Increase</button>
-    <button class="button2" onclick="button2('progress1','confirm1')">Reset</button>
-    <br /> <br /> <br /> <br />
-    <progress id="progress2" max="100" value="25"></progress>
-    <p id="confirm2" class="confirm"> </p> <br>
-    <button class="button1" onclick="button1('progress2','confirm2')">Increase</button>
-    <button class="button2" onclick="button2('progress2','confirm2')">Reset</button>
-    <br /> <br /> <br /> <br />
-    <progress id="progress3" max="100" value="25"><span>26%</span></progress>
-    <p id="confirm3" class="confirm"> </p> <br>
-    <button class="button1" onclick="button1('progress3','confirm3')">Increase</button>
-    <button class="button2" onclick="button2('progress3','confirm3')">Reset</button>
+        <div id="mySidenav" class="sidenav"></div>
 
 
 
 
+        <br />
+        <progress id="progress1" max="100" value="0"></progress>
+        <p id="confirm1" class="confirm"> </p> <br>
+        <button class="button1" onclick="button1('progress1','confirm1')">Increase</button>
+        <button class="button2" onclick="button2('progress1','confirm1')">Reset</button>
+        <br /> <br /> <br /> <br />
+        <progress id="progress2" max="100" value="25"></progress>
+        <p id="confirm2" class="confirm"> </p> <br>
+        <button class="button1" onclick="button1('progress2','confirm2')">Increase</button>
+        <button class="button2" onclick="button2('progress2','confirm2')">Reset</button>
+        <br /> <br /> <br /> <br />
+        <progress id="progress3" max="100" value="25"><span>26%</span></progress>
+        <p id="confirm3" class="confirm"> </p> <br>
+        <button class="button1" onclick="button1('progress3','confirm3')">Increase</button>
+        <button class="button2" onclick="button2('progress3','confirm3')">Reset</button>
 
 
 
-    <script>window.onload = doNavBar()</script>
+
+
+
+
+        <script>window.onload = doNavBar()</script>
+    </div>
 </body>

@@ -12,36 +12,40 @@
 </head>
 
 <body>
-    <h1>Testing</h1>
+    <button class="openbtn" onclick="openNav()"><img width="40px" src="/Images/boid-circle.png" alt="logo"></button>
 
-    <div id="navbar-placeholder"></div>
+    <div id="main">
+        <h1>Testing</h1>
+
+        <div id="mySidenav" class="sidenav"></div>
 
 
-    <center>
-        <h1 style="color:green; padding:13px;">
-            GeeksforGeeks
-        </h1>
+        <center>
+            <h1 style="color:green; padding:13px;">
+                GeeksforGeeks
+            </h1>
 
-        <p>
-            Webkit-Appearance slider-vertical of HTML
-            input[type=range] tag
-        </p>
+            <p>
+                Webkit-Appearance slider-vertical of HTML
+                input[type=range] tag
+            </p>
 
-        <br>
-        <br>
-        <input id="webkit" type="range" min="0" max="10" />
-        <br>
-        <br>
+            <br>
+            <br>
+            <input id="webkit" type="range" min="0" max="10" />
+            <br>
+            <br>
 
-        <p>Normal HTML input[type=range] tag</p>
+            <p>Normal HTML input[type=range] tag</p>
 
-        <br>
-        <br>
-        <input type="range" id="brightness" min="0" max="100" />
-        <p id="brightness_text" class="confirm"> </p> <br>
-        <button class="brightnessbutton" onclick="brightness('brightness','brightness_text')">Submit</button>
-    </center>
-    <script>window.onload = doNavBar()</script>
+            <br>
+            <br>
+            <input type="range" id="brightness" min="0" max="100" />
+            <p id="brightness_text" class="confirm"> </p> <br>
+            <button class="brightnessbutton" onclick="brightness('brightness','brightness_text')">Submit</button>
+        </center>
+        <script>window.onload = doNavBar()</script>
+    </div>
 </body>
 
 </html>

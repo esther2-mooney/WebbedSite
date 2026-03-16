@@ -6,24 +6,28 @@
     src: url('../Fonts/jetbrains-mono-v23-latin-700.woff2') format('woff2');
 }
 
+* {
+    margin: 0;
+}
+
 body {
     background-color: linen;
     color: black;
     font-family: 'JetBrains Mono';
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 h1 {
+    margin: 10px;
     text-align: center;
     font-size: 300%;
-    float: none;
 }
 
-h2 {
-    margin-left: 100px;
-}
-
-p {
-    margin-left: 100px;
+hr {
+    border: none;
+    height: 3px;
+    background-color: #758757;
 }
 
 #fonts {
@@ -34,45 +38,16 @@ p {
     float: left;
 }
 
-#navbar-placeholder {
-    margin: unset !important;
-    margin-left: 0px;
-    position: sticky;
-    top: 0;
-    left:0;
-}
-
 #boxmodel {
     text-align: center;
     width: 200px;
     border: 3px solid #758757;
     padding: 10px;
-    margin: auto;
-    border-radius: 15px;
-    font-weight: 500;
+    border-radius: 20px;
     float: right;
-    margin-right: 20px;
 }
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-button {
-    float: left;
-    margin: 20px;
-    background-color: lavender;
-    border-radius: 10px;
-    padding: 5px;
-
-}
-
 
 progress {
-
     float: left;
     margin-right: 20px;
     margin-left: 20px;
@@ -118,51 +93,74 @@ progress::-moz-progress-bar {
     appearance: slider-vertical;
 }
 
-
-
 ul {
+    padding: 0;
     list-style-type: none;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
     overflow: hidden;
     background-color: #99A682;
-    height: 50px;
-}
-
-ul li {
-    float: left;
-    margin-left: 10px;
 }
 
 ul li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    border-radius: 5px;
 }
 
 ul li a:hover {
     background-color: #758757;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #99A682;
+    overflow-x: hidden;
+    padding-top: 60px; /*make it 10px less the height of openbtn*/
+    transition: 0.5s;
+}
+
+.openbtn {
+    z-index: 100000;
+    background-color: #99A682;
+
+    border: none;
+    float: left;
+    top: 0;
+    left: 0;
+    position: fixed;
+    align-content: center;
+    vertical-align: middle;
+    width: 100px;
+    height: 70px;
+    padding: 0;
     border-radius: 5px;
 }
 
-
-.navbutton {
-    background-color: #99A682;
-    border-radius: 0px;
-    border: none;
-    float: left;
-    position: sticky;
-    align-content: center;
-    vertical-align: middle;
-    width: 75px;
-    height: 50px;
-    margin: 0;
-    top: 0;
+.openbtn:hover {
+    background-color: #758757;
 }
 
-.navbutton:hover {
-    background-color: #758757;
+#main {
+    transition: margin-left 0.5s;
+}
+
+@media screen and (max-height:450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 12px;
+    }
 }

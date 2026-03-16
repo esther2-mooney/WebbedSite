@@ -28,10 +28,21 @@ function doNavBar() {
     })
     .then(navHTML => {
       // Insert the navigation HTML into the placeholder
-      document.getElementById('navbar-placeholder').innerHTML = navHTML;
+      document.getElementById('mySidenav').innerHTML = navHTML;
     })
     .catch(error => {
       // Log errors (e.g., if nav.html is missing)
       console.error('Error loading navigation:', error);
     });
+}
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  if (document.getElementById("mySidenav").style.width == "100px")/*visible*/ {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  } else {
+    document.getElementById("mySidenav").style.width = "100px";
+    document.getElementById("main").style.marginLeft = "100px";
+  }
 }
